@@ -9,7 +9,9 @@ class Mortgage {
     private var rate = 0f
 
     fun Mortgage(){
-
+        setAmount(100000.0f)
+        setRate(0.035f)
+        setYears(30)
     }
 
     fun setAmount(newAmount: Float)
