@@ -8,6 +8,12 @@ class Mortgage {
     private var years = 0
     private var rate = 0f
 
+    companion object{
+        const val PREFERENCE_AMOUNT = "Amount"
+        const val PREFERENCE_YEARS = "Years"
+        const val PREFERENCE_RATE = "Rate"
+    }
+
     fun Mortgage(){
         setAmount(100000.0f)
         setRate(0.035f)

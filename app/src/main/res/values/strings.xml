@@ -14,4 +14,5 @@
     <string name="fifteen">15</string>
     <string name="ten">10</string>
     <string name="thirty">30</string>
+    <string name="done">DONE</string>
 </resources>

@@ -66,6 +66,7 @@
         android:gravity="center"
         android:paddingTop="50dip" >
         <Button
+            android:id="@+id/btn_modify_data"
             android:text="@string/modify_data"
             android:onClick="modifyData" />
     </TableRow>
