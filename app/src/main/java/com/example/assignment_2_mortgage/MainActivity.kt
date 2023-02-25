@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     private fun modifyData(){
         val myIntent = Intent(this, DataActivity::class.java)
         startActivity(myIntent)
+        overridePendingTransition(R.anim.slide_from_left, 0)
     }
 
     private fun updateView(){

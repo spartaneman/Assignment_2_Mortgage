@@ -25,6 +25,7 @@ class DataActivity : AppCompatActivity() {
     {
         updateMortgageObject()
         finish()
+        overridePendingTransition(R.anim.fade_in_and_scale, 0)
     }
 
     private fun updateView(){
