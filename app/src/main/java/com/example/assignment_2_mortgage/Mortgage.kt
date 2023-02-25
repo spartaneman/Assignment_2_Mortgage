@@ -7,7 +7,6 @@ class Mortgage {
     private var amount = 0f
     private var years = 0
     private var rate = 0f
-
     companion object{
         const val PREFERENCE_AMOUNT = "Amount"
         const val PREFERENCE_YEARS = "Years"

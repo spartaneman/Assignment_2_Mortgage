@@ -13,7 +13,7 @@
             android:text="@string/label_amount"
             android:padding="10dip" />
         <TextView
-            android:id="@+id/amount"
+            android:id="@+id/tv_amount"
             android:text="@string/amount" />
     </TableRow>
     <TableRow
@@ -23,7 +23,7 @@
             android:text="@string/label_years"
             android:padding="10dip" />
         <TextView
-            android:id="@+id/years"
+            android:id="@+id/tv_years"
             android:text="@string/years" />
     </TableRow>
     <TableRow
@@ -33,7 +33,7 @@
             android:text="@string/label_rate"
             android:padding="10dip" />
         <TextView
-            android:id="@+id/rate"
+            android:id="@+id/tv_rate"
             android:text="@string/rate" />
     </TableRow>
     <!-- red line -->
@@ -47,7 +47,7 @@
             android:text="@string/label_monthly_payment"
             android:padding="10dip" />
         <TextView
-            android:id="@+id/payment"
+            android:id="@+id/tv_payment"
             android:text="@string/monthly_payment" />
     </TableRow>
     <TableRow
@@ -57,7 +57,7 @@
             android:text="@string/label_total_payment"
             android:padding="10dip" />
         <TextView
-            android:id="@+id/total"
+            android:id="@+id/tv_total"
             android:text="@string/total_payment" />
     </TableRow>
     <TableRow
@@ -68,6 +68,6 @@
         <Button
             android:id="@+id/btn_modify_data"
             android:text="@string/modify_data"
-            android:onClick="modifyData" />
+             />
     </TableRow>
 </TableLayout>

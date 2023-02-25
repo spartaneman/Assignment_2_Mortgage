@@ -5,8 +5,8 @@ import android.util.Log
 
 class Prefs (context1: Context) {
     private var context: Context? = context1
-    private var amount: Float = 200000.0f
-    private var years: Int = 15
+    private var amount: Float = 100000.0f
+    private var years: Int = 30
     private var rate: Float = 0.035f
 
     companion object{
@@ -30,6 +30,11 @@ class Prefs (context1: Context) {
 
     fun getPreferences(mort: Mortgage)
     {
-        var sp= SharedPreferences?()
+        var sp: SharedPreferences? = context!!.getSharedPreferences(MORTGAGE,Context.MODE_PRIVATE)
+        if(sp != null){
+            mort.setYears(sp.getInt(Mortgage.PREFERENCE_YEARS,years))
+            mort.setRate(sp.getFloat(Mortgage.PREFERENCE_RATE,rate))
+            mort.setAmount(sp.getFloat(Mortgage.PREFERENCE_AMOUNT, amount))
+        }
     }
 }
